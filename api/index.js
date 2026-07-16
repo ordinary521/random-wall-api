@@ -1,3 +1,6 @@
+// 新增这一行，声明边缘运行时，不再需要vercel.json配置
+export const runtime = "edge";
+
 export default async function handler() {
   // ==========这里改成你自己的list.json CDN地址==========
   const jsonUrl = "https://cdn.jsdelivr.net/gh/ordinary521/cangku@main/list.json";
